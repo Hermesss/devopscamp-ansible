@@ -1,15 +1,17 @@
 ---
 # This role installs httpd
 
-- name: Install http
+- name: Install http #changed for loop due to deprecation warning
   yum:
-    name: "{{ item }}"
+    name:
+      - httpd
+      - php
+      - php-mysql
+      - git
     state: present
-  with_items:
-   - httpd
-   - php
-   - php-mysql
-   - git
+    autoclean: yes
+
+  
 
 - name: Configure SELinux to allow httpd to connect to remote database
   seboolean:
