@@ -24,6 +24,9 @@
    - restart nagios
 
 - name: configure localhost monitoring
+  file:
+   path: /etc/nagios/objects/
+   mode: directory
   copy: 
    src: localhost.cfg 
    dest: /etc/nagios/objects/localhost.cfg
