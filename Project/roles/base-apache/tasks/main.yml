@@ -1,7 +1,7 @@
 ---
 # This role installs httpd
 
-- name: Install http #changed for loop due to deprecation warning
+- name: Install apache2 #changed for loop due to deprecation warning
   yum:
     name:
       - apache2
@@ -9,6 +9,7 @@
       - php-mysql
       - git
     state: present
+    update_cache: yes
     autoclean: yes
 
   

@@ -4,3 +4,4 @@
    repo: "{{ repository }}"
    version: "{{ webapp_version }}"
    dest: /var/www/html/
+   force: yes
