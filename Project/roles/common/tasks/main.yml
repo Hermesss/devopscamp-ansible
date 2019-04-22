@@ -1,12 +1,12 @@
 ---
 # This role contains common plays that will run on all nodes.
 # Chaned syntax to YAML like and changed while item loops due to deprication
-- name: Install python bindings for SE Linux
-  apt: 
-   name:
-    - libselinux-python
-    - libsemanage-python
-   state: present
+#- name: Install python bindings for SE Linux
+#  apt: 
+#   name:
+#    - libselinux-python
+#    - libsemanage-python
+#   state: present
   
    
 - name: Create the repository for EPEL
