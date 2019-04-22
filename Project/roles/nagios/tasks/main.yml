@@ -9,7 +9,7 @@
    state: present
      
   notify: 
-   - restart httpd
+   - restart apache2
 
 - name: create nagios config dir
   file: 
