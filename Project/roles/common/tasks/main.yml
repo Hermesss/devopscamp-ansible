@@ -41,7 +41,7 @@
 #  notify: 
 #   - restart iptables
 
-- name: test to see if selinux is running
-  command: getenforce
-  register: sestatus
-  changed_when: false
+#- name: test to see if selinux is running
+ # command: getenforce
+  #register: sestatus
+  #changed_when: false
