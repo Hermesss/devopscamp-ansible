@@ -32,7 +32,7 @@
 - name: configure localhost monitoring
   copy: 
    src: localhost.cfg 
-  dest: /etc/nagios/objects/localhost.cfg
+   dest: /etc/nagios/objects/localhost.cfg
   notify: 
    - restart nagios
 
