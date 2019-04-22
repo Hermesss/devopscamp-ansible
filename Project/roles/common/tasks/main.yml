@@ -10,16 +10,6 @@
   
    
 #
-- name: install some useful nagios plugins
-  apt: 
-   name:
-    - nagios-nrpe
-    - nagios-plugins-swap
-    - nagios-plugins-users
-    - nagios-plugins-procs
-    - nagios-plugins-load
-    - nagios-plugins-disk
-   state: present
   
 - name: Install ntp
   apt: 
