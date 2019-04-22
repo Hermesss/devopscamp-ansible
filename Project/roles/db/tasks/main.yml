@@ -5,16 +5,16 @@
   apt: 
    name:
     - mysql-server
-    - MySQL-python
+    #- MySQL-python
  
    state: present
     
-- name: Configure SELinux to start mysql on any port
-  seboolean: 
-   name: mysql_connect_any 
-   state: true 
-   persistent: yes
-  when: sestatus.rc != 0
+#- name: Configure SELinux to start mysql on any port
+#  seboolean: 
+#   name: mysql_connect_any 
+ #  state: true 
+ #  persistent: yes
+ # when: sestatus.rc != 0
 
 - name: Create Mysql configuration file
   template: 
