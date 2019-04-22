@@ -22,11 +22,13 @@
    dest: /etc/nagios/nagios.cfg
   notify: 
    - restart nagios
-
-- name: configure localhost monitoring
+   
+- name: create dir for localhost.cfg
   file:
    path: /etc/nagios/objects/
    mode: directory
+
+- name: configure localhost monitoring
   copy: 
    src: localhost.cfg 
    dest: /etc/nagios/objects/localhost.cfg
