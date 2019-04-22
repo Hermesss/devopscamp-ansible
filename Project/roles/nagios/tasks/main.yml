@@ -5,13 +5,7 @@
   apt: 
    name:
     - nagios4
-    - nagios-plugins
-    - nagios-plugins-nrpe
-    - nagios-plugins-ping
-    - nagios-plugins-ssh
-    - nagios-plugins-http
-    - nagios-plugins-mysql
-    - nagios-devel 
+    - nagios4-core
    state: present
      
   notify: 
