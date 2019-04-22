@@ -4,7 +4,7 @@
 - name: install nagios
   apt: 
    name:
-    - nagios
+    - nagios4
     - nagios-plugins
     - nagios-plugins-nrpe
     - nagios-plugins-ping
