@@ -47,9 +47,10 @@
   tags:
   - monitoring
 # Configure and deploy redis
-#- hosts: redis
+- hosts: redis
 
- # roles:
- # - redis
-
-  #tags: redis
+  roles:
+  - redis
+  
+  tags: 
+   - redis
