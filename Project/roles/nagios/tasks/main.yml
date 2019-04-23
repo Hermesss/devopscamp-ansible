@@ -27,7 +27,8 @@
   file:
    path: /etc/nagios/objects
    mode: directory
-
+   state: directory
+   
 - name: configure localhost monitoring
   copy: 
    src: localhost.cfg 
