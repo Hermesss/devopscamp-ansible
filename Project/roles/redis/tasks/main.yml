@@ -1,7 +1,7 @@
 ---
 - name: Ensure Redis is installed.
   apt:
-    name: redis_server
+    name: redis-server
     state: present
     
 - name: Ensure Redis is configured.
@@ -13,6 +13,6 @@
   
 - name: Ensure Redis is running and enabled on boot.
   service: 
-   name: redis_server
+   name: redis-server
    state: started 
    enabled: yes
