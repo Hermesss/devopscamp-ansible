@@ -11,8 +11,8 @@
     mode: 0644
   notify: restart redis
   
-- name: Ensure Redis is running and enabled on boot.
-  service: 
-   name: redis-server
-   state: started 
-   enabled: yes
+#- name: Ensure Redis is running and enabled on boot.
+#  service: 
+ #  name: redis-server
+  # state: started 
+  # enabled: yes
