@@ -14,7 +14,11 @@
 
 - name: enable auth modes on apache2
   apache2_module:
-   name: auth_digest
+   name: "{{item}}"
+   state: present  
+  with_tems:
+   - auth_digest
+   - authz_groupfiles
   notify:
    - restart apache2    
 
