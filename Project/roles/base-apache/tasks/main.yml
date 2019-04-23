@@ -2,7 +2,7 @@
 # This role installs httpd
 
 - name: Install apache2 #changed for loop due to deprecation warning
-  yum:
+  apt:
     name:
       - apache2
       - php
@@ -12,7 +12,11 @@
     update_cache: yes
     autoclean: yes
 
-  
+- name: enable auth modes on apache2
+  apache2_module:
+   name: auth_digest
+   notify:
+   - restart apache2    
 
 #- name: Configure SELinux to allow httpd to connect to remote database
 #  seboolean:
