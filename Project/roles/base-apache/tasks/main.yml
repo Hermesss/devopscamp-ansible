@@ -15,7 +15,7 @@
 - name: enable auth modes on apache2
   apache2_module:
    name: auth_digest
-   notify:
+  notify:
    - restart apache2    
 
 #- name: Configure SELinux to allow httpd to connect to remote database
