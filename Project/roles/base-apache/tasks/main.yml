@@ -14,9 +14,9 @@
 
 - name: enable auth modes on apache2
   apache2_module:
-   name: "{{item}}"
+   name: "{{ item }}"
    state: present  
-  with_tems:
+  with_items:
    - auth_digest
    - authz_groupfiles
   notify:
