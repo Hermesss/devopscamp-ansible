@@ -26,9 +26,9 @@
 - name: create dir for localhost.cfg
   file:
    path: /etc/nagios/objects
-   mode: directory
+   mode: 0755
    state: directory
-   
+
 - name: configure localhost monitoring
   copy: 
    src: localhost.cfg 
